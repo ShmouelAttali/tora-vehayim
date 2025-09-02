@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-    font-family: FbHachaluzim-Medium serif;
+    font-family: 'FbLivorna-Regular', sans-serif;
     background: #fff;
     color: #17313a
 }
@@ -189,7 +189,7 @@ body {
     color: #567;
     padding: 16px;
     min-height: 160px;
-    font-family: FbLivorna-Regular sans-serif;
+    font-family: 'FbHachaluzim-Medium', serif;
 }
 
 .mission-text {
