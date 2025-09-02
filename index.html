@@ -16,8 +16,8 @@
 <section class="block">
     <div class="block-inner block-beige">
         <div class="decor decor-note decor-note-left"><img alt="header image" src="assets/header-img1.png"></div>
-        <div class="decor decor-note decor-note-right ds1"><img src="assets/header-img3.png"></div>
-        <div class="decor decor-note decor-note-right ds2"><img src="assets/header-img2.png"></div>
+        <div class="decor decor-note decor-note-right ds1"><img src="assets/header-img3.png" alt=""></div>
+        <div class="decor decor-note decor-note-right ds2"><img src="assets/header-img2.png" alt=""></div>
 
         <div class="brand">
             <img src="assets/logo.png" alt="לוגו" class="brand-logo"/>
@@ -51,13 +51,12 @@
                             class="yt"
                             src="https://www.youtube.com/embed/AbV8XhftAp0"
                             title="YouTube video"
-                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen
                     ></iframe>
                 </div>
             </div>
-            <div class="mission-book card"><img src="assets/book.png"></div>
+            <div class="mission-book card"><img src="assets/book.png" alt=""></div>
         </div>
     </div>
 </section>
@@ -66,10 +65,10 @@
 <section class="block vision">
     <div class="block-inner block-olive">
         <h2 class="block-title">איזה בית מדרש אנחנו רוצים ליצור?</h2>
-        <div class="decor decor-note decor-stack-left ds1"><img src="assets/vision-img1.png"></div>
-        <div class="decor decor-note decor-stack-left ds2"><img src="assets/vision-img1.png"></div>
+        <div class="decor decor-note decor-stack-left ds1"><img src="assets/vision-img1.png" alt=""></div>
+        <div class="decor decor-note decor-stack-left ds2"><img src="assets/vision-img1.png" alt=""></div>
         <div class="vision-right">
-            <div class="leaves"><img src="assets/leaves.png"></div>
+            <div class="leaves"><img src="assets/leaves.png" alt=""></div>
             <div class="vision-main card">
                 <p>
                     בית מדרש שיהיה מקום מזמין, עם ספריה מושקעת, עם מקומות ישיבה נוחים, עם פינת קפה מתוחזקת, עם אנרגיות
@@ -91,9 +90,15 @@
         <h2 class="block-title block-title-center">אשמח לשמוע עוד על בית המדרש</h2>
 
         <form id="bm-form" class="bm-grid">
-            <input class="bm-field" name="name" placeholder="שם *" required/>
-            <input class="bm-field" name="phone" placeholder="טלפון *" required/>
-            <textarea class="bm-area" name="notes" rows="4" placeholder="הערות"></textarea>
+            <label>
+                <input class="bm-field" name="name" placeholder="שם *" required/>
+            </label>
+            <label>
+                <input class="bm-field" name="phone" placeholder="טלפון *" required/>
+            </label>
+            <label>
+                <textarea class="bm-area" name="notes" rows="4" placeholder="הערות"></textarea>
+            </label>
             <button id="submit-btn" type="submit" class="bm-btn">שלח</button>
             <div id="ok" class="bm-ok">הטופס נשלח בהצלחה! ניצור אתך קשר בעזרת השם בקרוב.</div>
         </form>
