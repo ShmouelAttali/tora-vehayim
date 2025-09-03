@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0
 }
+
 @font-face {
     font-family: 'FbHachaluzim-Medium';
     src: url('assets/fonts/FbHachaluzim-Medium.otf');
@@ -21,18 +22,21 @@ html, body {
 }
 
 body {
-    font-family: 'FbLivorna-Regular', sans-serif;
     background: #fff;
     color: #17313a;
     font-size: 18px;
 }
 
+h2 {
+    font-family: 'FbLivorna-Regular', sans-serif;
+}
+
 :root {
     --beige: #c9c1b8;
-    --teal: rgb(13,107,110);
-    --teal2: rgba(13,107,110,0.2);
-    --olive: rgb(126,143,58);
-    --olive2: rgb(126,143,58,0.2);
+    --teal: rgb(13, 107, 110);
+    --teal2: rgba(13, 107, 110, 0.2);
+    --olive: rgb(126, 143, 58);
+    --olive2: rgb(126, 143, 58, 0.2);
     --gold: #b88c3a;
     --inner-pad: 26px;
     --frame: 10px; /* outer border width for blocks */
@@ -42,6 +46,10 @@ body {
 .block {
     width: 100%;
     padding: 22px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .block-inner {
@@ -100,7 +108,7 @@ body {
 .brand-logo {
     width: 30%;
     height: auto;
-    margin:auto;
+    margin: auto;
     /*filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .15));*/
 }
 
@@ -127,6 +135,7 @@ body {
     border-radius: 4px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .08);
     background-size: auto 100%;
+
     img {
         width: auto;
         height: 100%;
@@ -148,12 +157,12 @@ body {
     left: 16px;
 }
 
-    .ds1 {
-        top: 10%;
+.ds1 {
+    top: 10%;
     transform: rotate(12deg);
 }
 
-    .ds2 {
+.ds2 {
     top: 50%;
     transform: rotate(6deg);
 }
@@ -185,6 +194,7 @@ body {
     /*min-height: 160px;*/
     font-family: 'FbHachaluzim-Medium', serif;
     font-size: clamp(16px, 1.5vw, 22px);
+
     p {
         margin: 0;
     }
@@ -229,6 +239,7 @@ body {
     margin-left: clamp(-28px, 7vw, -45px);
     height: clamp(100px, 10vw, 186px);
     max-height: 70%;
+
     img {
         height: 100%;
         width: auto;
@@ -249,6 +260,12 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+.vision-text {
+    display: flex;
+    flex-direction: row;
+}
+
 .vision-main {
     border-color: var(--olive2);
     color: var(--olive);
@@ -343,21 +360,28 @@ body {
     padding: 0 8px 40px;
     font-size: clamp(12px, 1.5vw, 28px);
 }
+
 .footer-logo {
     /*width: clamp(80px, 12vw, 150px);*/
     height: auto;
     max-height: 55px;
 }
+
 .footer-text {
     margin-bottom: 0.5em;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
+    .vision-text {
+        flex-direction: column;
+    }
+
     .mission-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto 2fr auto;
     }
+
     .mission-book {
         max-height: 100px;
         bottom: 0;
@@ -379,6 +403,7 @@ body {
 
     .vision-right {
         flex-direction: column-reverse;
+
         .leaves {
             position: relative;
             right: 0;
@@ -386,6 +411,7 @@ body {
             /*margin-top: 12px;*/
         }
     }
+
     /*.vision-main {*/
     /*    margin-left: 10%;*/
     /*}*/
